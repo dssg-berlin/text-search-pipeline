@@ -58,11 +58,11 @@ Download fasttext vector model provided by deepset.ai
 
 Create and save keywords for each document using TF-IDF, this will also download the sample anonymized dataset and the sklearn TF-IDF vectorizer
 
-`python -W ignore /workspaces/obdachlosenhilfe/pipeline/tfidf-fasttext-pipe-codespace/02_extract_keywords.py`
+`python -W ignore pipeline/tfidf-fasttext-pipe-codespace/02_extract_keywords.py`
 
 Run text search with predefined terms and cosine similarity cutoff
 
-`python /workspaces/obdachlosenhilfe/pipeline/tfidf-fasttext-pipe-codespace/03_search_documents_for_topic.py`
+`python pipeline/tfidf-fasttext-pipe-codespace/03_search_documents_for_topic.py`
 
 ### Licenses
 
