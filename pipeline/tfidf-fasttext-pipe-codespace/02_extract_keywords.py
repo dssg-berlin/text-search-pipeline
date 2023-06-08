@@ -1,4 +1,4 @@
-import time, json, gdown, pickle
+import time, json, pickle
 import pandas as pd
 
 df = pd.read_json("data-assets/obdachlos_sample_anon.json.zip")
