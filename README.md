@@ -56,6 +56,10 @@ Download fasttext vector model provided by deepset.ai
 
 `wget https://s3.eu-central-1.amazonaws.com/int-emb-fasttext-de-wiki/20180917/model.bin`
 
+Unzip the keyword vectorizer
+
+`unzip data-assets/vectorizer.zip -d data-assets`
+
 Create and save keywords for each document using TF-IDF, this will also download the sample anonymized dataset and the sklearn TF-IDF vectorizer
 
 `python -W ignore pipeline/tfidf-fasttext-pipe-codespace/02_extract_keywords.py`
