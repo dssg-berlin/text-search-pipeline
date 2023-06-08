@@ -4,7 +4,7 @@ This pipeline is part of a DSSG Berlin e.V. volunteering project that ran from 2
 
 ![image](https://github.com/dssg-berlin/obdachlosenhilfe/assets/8211411/3965e70a-cb05-4268-9e73-ef84d74b801c)
 
-## Thanks to the Contributions
+## Thanks for the Contributions
 Contribute to add your name to the list of contributors.
 
 * [your GitHub name](https://www.github.com/)
@@ -18,49 +18,49 @@ Contribute to add your name to the list of contributors.
 
 ### Create a GitHub Codespace for this Repository
 
-create and open a codespace with 8 GB RAM on the repository main branch
+Create and open a codespace with 8 GB RAM on the repository main branch
 
 ![image](https://github.com/dssg-berlin/obdachlosenhilfe/assets/8211411/5dd73c3f-656c-4cfb-bd41-161c439a68d5)
 
-this will open a new tab in your browser
+This will open a new tab in your browser
 
 ![image](https://github.com/dssg-berlin/obdachlosenhilfe/assets/8211411/d25af6a4-23f6-40ca-ac50-f746f8a9b3de)
 
-go to https://github.com/codespaces
+Go to https://github.com/codespaces
 
 ![image](https://github.com/dssg-berlin/obdachlosenhilfe/assets/8211411/b34afc00-5afd-486f-9ff8-f19b13471126)
 
-change the codespace machine type to a machine with a memory of 8 GB RAM
+Change the codespace machine type to a machine with a memory of 8 GB RAM
 
 ![image](https://github.com/dssg-berlin/obdachlosenhilfe/assets/8211411/2e34b6dd-bf2d-4186-a32f-8295ea57b806)
 
-for the change of the machine type to become active stop the codespace
+For the change of the machine type to become active stop the codespace ...
 
 https://docs.github.com/en/codespaces/developing-in-codespaces/stopping-and-starting-a-codespace#stopping-a-codespace
 
-and restart it
+... and restart it
 
 https://docs.github.com/en/codespaces/developing-in-codespaces/stopping-and-starting-a-codespace#restarting-a-codespace
 
-open the tab of codespace inside your browser and enter the following commands into the terminal of your codespace
+Open the tab of codespace inside your browser and enter the following commands into the terminal of your codespace
 
 ![image](https://github.com/dssg-berlin/obdachlosenhilfe/assets/8211411/351b65fd-12f3-4edf-9649-e58fe4060432)
 
 ### Run the Pipeline
 
-install dependencies
+Install dependencies
 
 `pip install -r pipeline/tfidf-fasttext-pipe-codespace/pipeline_requirements.txt`
 
-download fasttext vector model provided by deepset.ai
+Download fasttext vector model provided by deepset.ai
 
 `wget https://s3.eu-central-1.amazonaws.com/int-emb-fasttext-de-wiki/20180917/model.bin`
 
-create and save keywords for each document using TF-IDF, this will also download the sample anonymized dataset and the sklearn TF-IDF vectorizer
+Create and save keywords for each document using TF-IDF, this will also download the sample anonymized dataset and the sklearn TF-IDF vectorizer
 
 `python -W ignore /workspaces/obdachlosenhilfe/pipeline/tfidf-fasttext-pipe-codespace/02_extract_keywords.py`
 
-run search with predefined terms and cosine similarity cutoff
+Run text search with predefined terms and cosine similarity cutoff
 
 `python /workspaces/obdachlosenhilfe/pipeline/tfidf-fasttext-pipe-codespace/03_search_documents_for_topic.py`
 
