@@ -7,9 +7,7 @@ fulltext = list(df.text)
 
 print("len_fulltexts", len(fulltext))
 
-gdown.download(id="143oNL3F-MufbW-UpE6tMj6GQvMzD-KA3", output="../vectorizer.pk")
-
-with open("../vectorizer.pk", "rb") as infile:
+with open("data-assets/vectorizer.pk", "rb") as infile:
     vectorizer = pickle.load(infile)
 
 # https://www.kaggle.com/code/rowhitswami/keywords-extraction-using-tf-idf-method
